@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func rotN(s string, n int) string {
 	// Normalize N
 	n = ((n % 26) + 26) % 26
@@ -21,8 +19,4 @@ func rotN(s string, n int) string {
 	}
 
 	return string(out)
-}
-
-func main() {
-	fmt.Println(rotN("Uryyb, Jbeyq!", 13))
 }
